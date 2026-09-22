@@ -6,6 +6,8 @@ published in Nature 2024) as a leaky integrate-and-fire network in numpy. You ca
 teach it, feed it, watch its moods — and poke the real brain with genuine neuroscience
 experiments.
 
+![FlyPet dashboard](docs/screenshot.png)
+
 ## What this is (and isn't)
 
 **It is:** a desktop *creature* whose character comes from a real connectome, plus a small
