@@ -1,0 +1,22 @@
+# personal / runtime state — never publish
+activity.enc
+activity_summary.txt
+memory.json
+agents.json
+hands.log
+
+# python
+__pycache__/
+*.pyc
+
+# machine-specific launcher (regenerate with make_app.py)
+FlyPet.lnk
+FlyPet.bat
+
+# large regenerable data (see README for download)
+# (kept in repo by default; uncomment to exclude)
+# data/
+
+# unused / personal state
+data/classification.csv.gz
+data/tasks.npz

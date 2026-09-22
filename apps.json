@@ -1,0 +1,23 @@
+{
+  "_comment": "Edit this file. 'apps' is what the fly can open/close by name. 'tasks' are long background jobs it can run. 'autonomous' is the ONLY list it may act on by itself when bored - commanded actions are not limited to it.",
+  "apps": {
+    "notepad": "notepad.exe",
+    "calculator": "calc.exe",
+    "paint": "mspaint.exe",
+    "explorer": "explorer.exe",
+    "browser": "start chrome",
+    "terminal": "start wt.exe",
+    "vscode": "code",
+    "task manager": "taskmgr.exe",
+    "telegram": "explorer.exe shell:AppsFolder\\TelegramMessengerLLP.TelegramDesktop_t4vj0pshhgkwm!Telegram.TelegramDesktop.Store",
+    "whatsapp": "explorer.exe shell:AppsFolder\\5319275A.WhatsAppDesktop_cv1g1gvanyjgm!App"
+  },
+  "tasks": {
+    "disk scan": "powershell -NoProfile -Command \"Get-ChildItem $env:USERPROFILE -Recurse -File -ErrorAction SilentlyContinue | Measure-Object -Property Length -Sum | ForEach-Object { 'home folder: {0:N1} GB in {1:N0} files' -f ($_.Sum/1GB), $_.Count }\"",
+    "demo": "powershell -NoProfile -Command \"Start-Sleep 45; 'demo task done'\"",
+    "flypet tests": "python test_brain.py"
+  },
+  "autonomous": [
+    "open notepad"
+  ]
+}
